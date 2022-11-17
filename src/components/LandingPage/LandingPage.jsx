@@ -1,12 +1,16 @@
 import React from 'react';
+import LeavesParticles from '../Particles/LeavesParticles';
+import RainParticles from '../Particles/RainParticles';
 import './style.css';
 
 const LandingPage = () => {
   return (
-    <div className='background1'>
-      <p>Particles 1</p>
-      <p>Particles 2</p>
-    </div>
+    <>
+      <div className='background1'>
+        {/* <LeavesParticles /> */}
+        <RainParticles />
+      </div>
+    </>
   );
 };
 

@@ -17,7 +17,7 @@ const canContinue = useMemo(() => {
 }, [isError, isLoading]);
 */
 
-const LeavesParticles = (props) => {
+const RainParticles = (props) => {
   // using useMemo is not mandatory, but it's recommended since this value can be memoized if static
   const options = useMemo(() => {
     // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
@@ -25,7 +25,7 @@ const LeavesParticles = (props) => {
     return {
       background: {
         image:
-          'url("https://raw.githubusercontent.com/luorixo/portfolio/main/client/src/assets/Images/background1.JPG")',
+          'url("https://raw.githubusercontent.com/luorixo/portfolio/main/client/src/assets/Images/background2.JPG")',
         size: 'cover', // background image size
         color: '#000', // background color
         opacity: 1, // background opacity
@@ -53,7 +53,7 @@ const LeavesParticles = (props) => {
             quantity: 10, // number of particles to add on click
           },
           repulse: {
-            distance: 30, // distance of the particles from the cursor
+            distance: 20, // distance of the particles from the cursor
           },
         },
       },
@@ -63,27 +63,27 @@ const LeavesParticles = (props) => {
             enable: true, // enables the density option
             area: 800, // area of the particles
           },
-          value: 25,
+          value: 35,
         },
         shape: {
           type: 'image',
           image: {
-            src: 'https://i.ibb.co/ZTVs4Xb/leaf.png', // image source
-            width: 75, // image width
-            height: 75, // image height
+            src: 'https://i.ibb.co/BsvVPch/rain.png', // image source
+            width: 20, // image width
+            height: 40, // image height
           },
         },
 
         move: {
           enable: true, // enabling this will make particles move in the canvas
-          direction: 'bottom-right', // direction of the particles
-          speed: { min: 2, max: 4 }, //Object{} using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
+          direction: 'bottom', // direction of the particles
+          speed: { min: 20, max: 24 }, //Object{} using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },
         opacity: {
-          value: { min: 0.4, max: 0.8 }, // using a different opacity, to have some semitransparent effects
+          value: { min: 0.2, max: 0.8 }, // using a different opacity, to have some semitransparent effects
         },
         size: {
-          value: { min: 10, max: 35 }, // let's randomize the particles size a bit
+          value: { min: 3, max: 6 }, // let's randomize the particles size a bit
         },
       },
     };
@@ -99,4 +99,4 @@ const LeavesParticles = (props) => {
   return <Particles id={props.id} init={particlesInit} options={options} />;
 };
 
-export default LeavesParticles;
+export default RainParticles;
