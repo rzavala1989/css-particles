@@ -1,6 +1,13 @@
 import React from 'react';
 import './style.css';
 
-export const LandingPage = () => {
-  return <div>LandingPage</div>;
+const LandingPage = () => {
+  return (
+    <div className='background1'>
+      <p>Particles 1</p>
+      <p>Particles 2</p>
+    </div>
+  );
 };
+
+export default LandingPage;
