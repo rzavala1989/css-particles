@@ -13,7 +13,7 @@ import ashleighDamageTwo from './images/ashleigh_damage_2.GIF';
 import ashleighDamageThree from './images/ashleigh_damage_3.GIF';
 import { useNavigate } from 'react-router-dom';
 
-const FightPage2 = () => {
+export const FightPage2 = () => {
   // this page is for the fight page screen view.
   let navigate = useNavigate();
 

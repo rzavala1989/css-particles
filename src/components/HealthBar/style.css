@@ -1,0 +1,43 @@
+.healthbox {
+  background-color: #f8eac7;
+  width: 30vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 5 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+.namelabel {
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0.3rem;
+  margin-bottom: -0.2rem;
+  width: 10vw;
+}
+
+.hpbox {
+  height: 2.5vh;
+  width: 28vw;
+  padding: 0.3rem;
+  background-color: #c5e5cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0.3rem 0.6rem;
+}
+
+.hpbox::before {
+  color: #333;
+  content: 'HP';
+  font-family: 'Baloo 2', cursive;
+  font-size: 15px;
+  font-weight: 800;
+  margin-right: 0.18rem;
+}
