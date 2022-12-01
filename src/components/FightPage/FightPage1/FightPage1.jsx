@@ -7,6 +7,10 @@ import LeavesParticles from '../../Particles/LeavesParticles';
 import RainParticles from '../../Particles/RainParticles';
 import SmokeParticles from '../../Particles/SmokePartcles';
 //images for each individual enemy
+import nastyIdle from './images/nasty_idle_1.GIF';
+import nastyDamageOne from './images/nasty_damage_1.GIF';
+import nastyDamageTwo from './images/nasty_damage_2.GIF';
+import nastyDamageThree from './images/nasty_damage_3.GIF';
 
 export const FightPage1 = () => {
   const navigate = useNavigate();
@@ -36,11 +40,11 @@ export const FightPage1 = () => {
     Attack(noFirstTask ? 0 : health / numberOfTasks);
     //TODO change enemy image based on health
     if (numberOfTasks < 3) {
-      setEnemyImage('https://i.imgur.com/1DQZV6U.gif');
+      setEnemyImage(nastyDamageOne);
     } else if (numberOfTasks < 6) {
-      setEnemyImage('https://i.imgur.com/1DQZV6U.gif');
+      setEnemyImage(nastyDamageTwo);
     } else {
-      setEnemyImage('https://i.imgur.com/1DQZV6U.gif');
+      setEnemyImage(nastyDamageThree);
     }
   };
 
