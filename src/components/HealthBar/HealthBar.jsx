@@ -4,7 +4,7 @@ import { LinearProgress } from '@mui/material';
 import { linearProgressClasses } from '@mui/material/LinearProgress';
 import { styled } from '@mui/material/styles';
 
-export const HealthBar = ({ health }) => {
+export const HealthBar = ({ health, name }) => {
   const ProgressBarColor = () => {
     if (health > 67) {
       return 'green';
@@ -29,7 +29,7 @@ export const HealthBar = ({ health }) => {
   return (
     <div className='healthbox'>
       <label htmlFor='' className='namelabel'>
-        NASTY
+        {name}!
       </label>
       <div className='hpbox'>
         <StyledHealthBar variant='determinate' value={health} />

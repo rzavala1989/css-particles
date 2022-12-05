@@ -104,7 +104,7 @@ export const FightPage1 = () => {
         </div>
         <div className='right-side'>
           <div className='health-div'>
-            <HealthBar health={health} />
+            <HealthBar health={health} name='NASTY' />
           </div>
           <div className='monster-div'>
             <img src={currentEnemyImage} alt='monster' />
